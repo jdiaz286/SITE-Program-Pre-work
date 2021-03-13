@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Jonathan Diaz PreWork</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <center>
+      <h1>Light and Sound Memory Game</h1>
+    </center>
+    <!-- all audio files saved here -->
+    <audio
+      src="https://cdn.glitch.com/1c103263-96f6-4a88-a026-5298846e2e15%2FA.wav?v=1615657977435"
+      id="a_audio"
+    ></audio>
+    <audio
+      src="https://cdn.glitch.com/1c103263-96f6-4a88-a026-5298846e2e15%2FB.wav?v=1615657984169"
+      id="b_audio"
+    ></audio>
+    <audio
+      src="https://cdn.glitch.com/1c103263-96f6-4a88-a026-5298846e2e15%2FC.wav?v=1615657987878"
+      id="c_audio"
+    ></audio>
+    <audio
+      src="https://cdn.glitch.com/1c103263-96f6-4a88-a026-5298846e2e15%2FD.wav?v=1615657995073"
+      id="d_audio"
+    ></audio>
+    <audio
+      src="https://cdn.glitch.com/1c103263-96f6-4a88-a026-5298846e2e15%2FE.wav?v=1615658000054"
+      id="e_audio"
+    ></audio>
+    <audio
+      src="https://cdn.glitch.com/1c103263-96f6-4a88-a026-5298846e2e15%2FF.wav?v=1615658003059"
+      id="f_audio"
+    ></audio>
+    <p>
+      <center>Hello there, copy the pattern to win!</center>
+    </p>
+
+    <center>
+      <h2 id="triesLabel" class="hidden">Tries left: 3</h2>
+    </center>
+
+    <center>
+      <h3 id="timerLabel" class="hidden">Time left:</h3>
+    </center>
+
+    <center>
+      <button id="startBtn" onclick="startGame()">
+        Start
+      </button>
+
+      <button id="stopBtn" onclick="stopGame()" class="hidden">
+        Stop
+      </button>
+    </center>
+
+    <center>
+      <div id="gameButtonArea">
+        <button
+          id="button1"
+          onmousedown="startTone(1)"
+          onmouseup="stopTone()"
+          onclick="guess(1)"
+        >
+          <img
+            src="https://cdn.glitch.com/1c103263-96f6-4a88-a026-5298846e2e15%2Fletter_a_PNG26.png?v=1615487956497"
+            height="50"
+            width="50"
+          />
+        </button>
+        <button
+          id="button2"
+          onmousedown="startTone(2)"
+          onmouseup="stopTone()"
+          onclick="guess(2)"
+        >
+          <img
+            src="https://cdn.glitch.com/1c103263-96f6-4a88-a026-5298846e2e15%2Fletter_b_PNG68.png?v=1615488335066"
+            height="50"
+            width="60"
+          />
+        </button>
+        <button
+          id="button3"
+          onmousedown="startTone(3)"
+          onmouseup="stopTone()"
+          onclick="guess(3)"
+        >
+          <img
+            src="https://cdn.glitch.com/1c103263-96f6-4a88-a026-5298846e2e15%2FAlphabet-C-Transparent-File.png?v=1615488465704"
+            height="50"
+            width="60"
+          />
+        </button>
+        <button
+          id="button4"
+          onmousedown="startTone(4)"
+          onmouseup="stopTone()"
+          onclick="guess(4)"
+        >
+          <img
+            src="https://cdn.glitch.com/1c103263-96f6-4a88-a026-5298846e2e15%2FAlphabet-D-Transparent-File.png?v=1615488619192"
+            height="50"
+            width="60"
+          />
+        </button>
+        <button
+          id="button5"
+          onmousedown="startTone(5)"
+          onmouseup="stopTone()"
+          onclick="guess(5)"
+        >
+          <img
+            src="https://cdn.glitch.com/1c103263-96f6-4a88-a026-5298846e2e15%2FAlphabet-E-Transparent-File.png?v=1615488674582"
+            height="50"
+            width="60"
+          />
+        </button>
+        <button
+          id="button6"
+          onmousedown="startTone(6)"
+          onmouseup="stopTone()"
+          onclick="guess(6)"
+        >
+          <img
+            src="https://cdn.glitch.com/1c103263-96f6-4a88-a026-5298846e2e15%2FAlphabet-F-Transparent-Free-PNG.png?v=1615488676945"
+            height="50"
+            width="60"
+          />
+        </button>
+      </div>
+    </center>
+  </body>
+  <footer>
+    <center>This website was made by Jonathan Diaz</center>
+  </footer>
+</html>
